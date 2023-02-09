@@ -1,0 +1,4 @@
+xvlog ./*.v*
+xelab tb_quantizer -debug wave -s tb_quantizer
+#xsim tb_power_of_8 -R  # do not check waveform
+xsim tb_quantizer -gui -wdb simulate_xsim_tb_quantizer.wdb 
